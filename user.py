@@ -37,7 +37,7 @@ def create_table(con):
             company_name CHAR(255) NOT NULL,
             address CHAR(255) NOT NULL,
             city CHAR(255) NOT NULL,
-            county CHAR(255) NOT NULL,
+            country CHAR(255) NOT NULL,
             state CHAR(255) NOT NULL,
             zip REAL NOT NULL,
             phone1 CHAR(255) NOT NULL,
@@ -70,7 +70,7 @@ COLUMNS = (
     "country",
     "state",
     "zip",
-    "phone,1"
+    "phone1",
     "phone2",
     "email",
     "web",
@@ -155,7 +155,7 @@ def main():
     elif user_input == "3":
         user_data = []
         for column in COLUMNS:
-            column_value = input(f"Enter the value of {column}")
+            column_value = input(f"Enter the value of {column} :")
             user_data.append(column_value)
         insert_users(con,[tuple(user_data)])
 
@@ -179,7 +179,7 @@ def main():
 
     elif user_input == "8":
         users_id = input("Enter the user id:")
-        if user_id.isnumeric():
+        if users_id.isnumeric():
             delete_user_by_id(con,users_id)
 
     elif user_input == "9":
