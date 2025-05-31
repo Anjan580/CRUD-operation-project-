@@ -1,8 +1,7 @@
 #CURD OPERATION PROJECT
+# CRUD ==> Create, Read, Update, Delete
 import sqlite3
 import csv
-
-# 8609
 
 
 def create_connection():
