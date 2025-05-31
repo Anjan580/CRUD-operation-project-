@@ -193,3 +193,14 @@ def main():
         exit()
 
 main()
+
+
+#Install git 
+#create repository in github
+
+# git init
+# git status ==> If you want to check what are the status of files.
+# git diff ==> If you want to check what are the changes
+# git add .
+# git commit -m "your message"
+# copy paste git code from github
